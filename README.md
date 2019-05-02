@@ -34,10 +34,13 @@ By default API server will be started on this URL: http://localhost:3000/
 # Service EndPoints
 
 GET /users
+
 Lists all users.
 
 GET /users/:id
+
 List all friends of the user with teh id specified
 
 GET /friend/:id
+
 Lists all friends of friends
