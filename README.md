@@ -40,4 +40,4 @@ GET /users/:id
 List all friends of the user with teh id specified
 
 GET /friend/:id
-Lists all friend of friends
+Lists all friends of friends
