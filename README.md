@@ -33,7 +33,7 @@ By default API server will be started on this URL: http://localhost:3000/
 
 # Service EndPoints
 
-GET /users
+GET /users/:pageno/:size
 
 Lists all users.
 
