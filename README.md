@@ -11,7 +11,7 @@ Download and install NodeJS and PostgreSQL if you don't have them already:
 	
   https://www.postgresql.org/download/
   
-Change API and database configuration in api/queries.js. 
+Change database configuration in queries.js. 
 
 Then run these commands:
 
@@ -19,6 +19,16 @@ Install dependencies:
   1) npm install
   2) npm install i express pg (to download express and postgress dependencies)
   3) npm init -y (for creating a package.json file)
+  
+  
+Create a Table in postgress with name users1
+
+CREATE TABLE users1 (id SERIAL PRIMARY KEY, firstName VARCHAR(20), lastname VARCHAR(20), avatar VARCHAR(20);
+
+Create another Table named friend
+
+CREATE TABLE friend (user_id INTEGER REFERENCES users1(id), friend_id INTERGER REFERENCES users1(id));
+populate these tables by using insert into commands
 
 Copy the index.js and queries.js files in the folder where you have run dependencies  for express and pg.
 
