@@ -18,9 +18,9 @@ app.get('/', (request, response) => {
 //route getting all users with pagination 
 app.get('/users/:pageno/:size', db.getUsers)
 //route for getting a friend of a user by id
-app.get('/users/:id', db.getFriend)
+app.get('/friends/:id', db.getFriend)
 //route for getting a friend of friend by id 
-app.get('/friend/:id', db.getFriendOfFriend)
+app.get('/friends-of-friends/:id', db.getFriendOfFriend)
 
 
 app.listen(port, () => {
