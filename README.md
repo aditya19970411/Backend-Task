@@ -31,8 +31,42 @@ CREATE TABLE friend (user_id INTEGER REFERENCES users1(id), friend_id INTERGER R
 
 populate these tables by using insert into commands
 
-users1 & friend Schema:
+users1 Table:
 
+id | firstname | lastname | avatar
+----|-----------|----------|--------
+  1 | George    | marine   | dog
+  2 | Jerry     | marine   | cat
+  3 | u1        | s1       | d1
+  4 | u2        | s2       | d1
+  5 | u3        | s3       | d1
+  6 | u4        | s4       | d1
+  7 | u5        | s5       | d1
+  8 | u6        | s6       | d1
+  9 | u7        | s7       | d1
+ 10 | u8        | s8       | d1
+ 12 | u9        | s9       | d2
+ 13 | u10       | s10      | d2
+ 15 | u11       | s11      | d3
+ 16 | Krishna   | Bret     | d2
+ 17 | bristle   | Back     | d3
+ 19 | Omni      | Slash    | d4
+ 20 | Billy     | Batson   | d4 
+ 
+friend Table:
+
+user_id | friend_id
+---------|-----------
+1 	|         2
+1 	|         3
+1 	|         4
+2 	|         4
+2 	|         5
+3 	|         5
+3 	|         6
+3 	|         8
+
+       
 Copy the index.js and queries.js files in the folder where you have run dependencies  for express and pg.
 
 use nodemon for stating the server
