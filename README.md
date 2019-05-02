@@ -84,10 +84,10 @@ GET /users/:pageno/:size
 
 Lists all users with pagination.
 
-GET /users/:id
+GET /friends/:id
 
 List all friends of the user with teh id specified
 
-GET /friend/:id
+GET /friendsoffriends/:id
 
 Lists all friends of friends
