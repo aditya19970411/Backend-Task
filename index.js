@@ -15,8 +15,10 @@ app.get('/', (request, response) => {
   response.json({ info: 'Node.js, Express, and Postgres API' })
 })
 
-app.get('/users', db.getUsers)
+app.get('/users/:pageno/:size', db.getUsers)
+//app.get('/users', db.getUsers)
 app.get('/users/:id', db.getFriend)
+app.get('/friend/:id', db.getFriendOfFriend)
 //app.post('/users', db.createUser)
 //app.put('/users/:id', db.updateUser)
 //app.delete('/users/:id', db.deleteUser)
