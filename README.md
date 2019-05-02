@@ -31,11 +31,34 @@ CREATE TABLE friend (user_id INTEGER REFERENCES users1(id), friend_id INTERGER R
 
 populate these tables by using insert into commands
 
-user1 table:
+users1 table:
+
+ id | firstname | lastname | avatar
+----+-----------+----------+--------
+  1 | George    | marine   | dog
+  2 | Jerry     | marine   | cat
+  3 | u1        | s1       | d1
+  4 | u2        | s2       | d1
+  5 | u3        | s3       | d1
+  6 | u4        | s4       | d1
+  7 | u5        | s5       | d1
+  8 | u6        | s6       | d1
+  9 | u7        | s7       | d1
+ 10 | u8        | s8       | d1
 
 
- friends table:
+friends table:
  
+ user_id | friend_id
+---------+-----------
+       1 |         2
+       1 |         3
+       1 |         4
+       2 |         4
+       2 |         5
+       3 |         5
+       3 |         6
+       3 |         8 
  
        
 The table should look like this 
