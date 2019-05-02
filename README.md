@@ -1,13 +1,16 @@
 # Backend Task
 Express with Postgres
 
-Install postgres Database for the Operating System you want to work
+Install postgres Database for the Operating System you want to wor
 
 How To Run The Service
+
 Download and install NodeJS and PostgreSQL if you don't have them already:
 
-https://nodejs.org/en/download/
-https://www.postgresql.org/download/
+  https://nodejs.org/en/download/ 
+	
+  https://www.postgresql.org/download/
+  
 Change API and database configuration in api/queries.js. 
 
 Then run these commands:
