@@ -1,7 +1,7 @@
 # Backend Task
 Express with Postgres
 
-Install postgres Database for the Operating System you want to wor
+Install postgres Database for the Operating System you want to work
 
 # How To Run The Service
 
@@ -21,13 +21,14 @@ Install dependencies:
   3) npm init -y (for creating a package.json file)
   
   
-Create a Table in postgress with name users1
+Create a Table in postgress with name users1:
 
 CREATE TABLE users1 (id SERIAL PRIMARY KEY, firstName VARCHAR(20), lastname VARCHAR(20), avatar VARCHAR(20);
 
-Create another Table named friend
+Create another Table named friend:
 
 CREATE TABLE friend (user_id INTEGER REFERENCES users1(id), friend_id INTERGER REFERENCES users1(id));
+
 populate these tables by using insert into commands
 
 Copy the index.js and queries.js files in the folder where you have run dependencies  for express and pg.
@@ -45,7 +46,7 @@ By default API server will be started on this URL: http://localhost:3000/
 
 GET /users/:pageno/:size
 
-Lists all users.
+Lists all users with pagination.
 
 GET /users/:id
 
