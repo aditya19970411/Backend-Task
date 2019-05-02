@@ -35,6 +35,7 @@ user1 table:
 
  id | firstname | lastname | avatar
 ----+-----------+----------+--------
+
   1 | George    | marine   | dog
   2 | Jerry     | marine   | cat
   3 | u1        | s1       | d1
