@@ -3,7 +3,7 @@ Express with Postgres
 
 Install postgres Database for the Operating System you want to wor
 
-How To Run The Service
+# How To Run The Service
 
 Download and install NodeJS and PostgreSQL if you don't have them already:
 
