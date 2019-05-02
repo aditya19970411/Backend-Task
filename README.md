@@ -20,5 +20,5 @@ Install dependencies:
   2) npm install i express pg (to download express and postgress dependencies)
   3) npm init -y (for creating a package.json file)
 
-Copy the index.js and queries.js files
+Copy the index.js and queries.js files in the folder where you have run dependencies  for express and pg.
 
